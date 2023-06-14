@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100..900&family=Montserrat:wght@100...900;426&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+}
+
+nav,
+header,
+main
+
+ {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section, video {width: 100%;}
+
+header {
+    height: 62vh;
+    text-align: center;
+}
+
+
+.mostrar {
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: black;
+    width: 100vw;
+    padding: 2vw;
+
+
+
+}
+
+
+nav {
+    color: white;
+    background-color: #bf74c6;
+    height: 19vh;
+    padding: 0 8.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav div {
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+    transition-property: color, background-color;
+    transition-duration: 0,5ms
+}
+
+nav, nav a:hover{
+    color:  #0d0d0d;
+    background-color: #bf74c6;
+}
+
+
+
+
+
+nav a,
+nav h1,
+header h3,
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 40px;
+    color:white
+
+
+}
+
+
+
+header h3 {
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+
+
+}
+
+nav h1 {
+    font-weight: 500;
+    margin: 0;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    animation-name: miMovimiento;
+    animation-duration: 4s;
+    animation-delay: 0,3ms;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes miMovimiento {
+
+    from {
+       
+         color: rgb(0, 0, 0);
+
+    }
+
+
+    to {
+
+        color: #f693ff;
+       
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+header p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+nav a,
+header a {
+    font-size: 20px;
+}
+
+nav a,
+header a {
+    font-family: 'Lato', sans-serif;
+    color: white;
+
+}
+
+header a {
+    background-color: #e333c8;
+    text-transform: capitalize;
+}
+
+
+
+nav span {
+    display: none;
+}
+
+
+
+.icon-menu,
+.icon-icono-1,
+.icon-icono-2 {
+   
+    font-size: 6vw;
+
+}
+
+.icon-menu:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+
+}
+
+
+
+main section div {
+    width: 45.83%;
+}
+
+section div img {
+    width: 100%;
+}
+
+main section {
+    display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.lightboxOverlay {background-color: rgb(134, 133, 133);
+}
+footer {
+        height: 150px;
+        background-color:#bf74c6;
+        margin: 0%;
+    }
+
+
+@media(max-width:992px) {
+
+
+    nav div {
+        width: 40%;
+        
+    }
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+    nav div {
+        display: none;
+    }
+
+
+    
+   
+
+    nav span {
+        display: inline;
+    }
+
+
+   
+
+}
